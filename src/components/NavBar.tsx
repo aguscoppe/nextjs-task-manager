@@ -1,13 +1,12 @@
-import Image from 'next/image';
 import React from 'react';
-import logo from '@/assets/logo.webp';
 import Link from 'next/link';
+import { FaQuinscape } from 'react-icons/fa';
 
 const NavBar = () => {
   return (
     <nav className='bg-emerald-600 py-4 px-6 w-full flex flex-row justify-evenly'>
       <Link href='/'>
-        <Image src={logo} alt='logo' width={24} height={24} />
+        <FaQuinscape style={{ fontSize: '24px' }} />
       </Link>
       <ul className='w-full flex flex-row justify-end'>
         <Link href='/'>
